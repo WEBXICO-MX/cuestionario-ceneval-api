@@ -6,15 +6,18 @@
     "fecha_registro": "24/03/2022 09:32:00",
     "email_registro": "eder.weiss87@gmail.com",
     "secciones": [{
+            "visible": false,
             "id_seccion": "SECCION1",
             "etiqueta": "I. IDENTIFICACIÓN DE LA APLICACIÓN",
             "variables": [{
+                    "visible": false,
                     "variable": "TIPO_EXA",
                     "tipo": "CARÁCTER",
                     "longuitud": "3",
                     "etiqueta": "Tipo de examen",
-                    "valor": "EX2"
+                    "valores": ["EX2"]
                 }, {
+                    "visible": false,
                     "variable": "MOD_APL1",
                     "tipo": "CARÁCTER",
                     "longuitud": "2",
@@ -67,6 +70,7 @@
                         }
                     ]
                 }, {
+                    "visible": false,
                     "variable": "MOD_APL2",
                     "tipo": "CARÁCTER",
                     "longuitud": "2",
@@ -122,121 +126,142 @@
                         }
                     ]
                 }, {
+                    "visible": false,
                     "variable": "APLI",
                     "tipo": "CARÁCTER",
                     "longuitud": "9",
-                    "etiqueta": "Número de aplicación"
+                    "etiqueta": "Número de aplicación",
+                    "valores": ["0114"]
                 }, {
+                    "visible": false,
                     "variable": "FECHA_APLI",
                     "tipo": "FECHA",
                     "longuitud": "10",
-                    "etiqueta": "Fecha de aplicación"
+                    "etiqueta": "Fecha de aplicación",
+                    "valores": ["30/07/2022"]
                 }, {
+                    "visible": false,
                     "variable": "ACRONIMO",
                     "tipo": "CARÁCTER",
                     "longuitud": "25",
-                    "etiqueta": "Acrónimo del instrumento"
+                    "etiqueta": "Acrónimo del instrumento",
+                    "valores": [""]
                 }, {
+                    "visible": true,
                     "id_seccion": "SECCION1.1",
                     "etiqueta": "VARIABLES PARA INSTITUCIONES CON REGISTRO PROPIO",
                     "variables": [{
+                            "visible": false,
                             "variable": "SEDE_APLI",
                             "tipo": "CARÁCTER",
                             "longuitud": "150",
-                            "etiqueta": "Nombre de la sede de aplicación"
+                            "etiqueta": "Nombre de la sede de aplicación",
+                            "valores": ["UNIVERSIDAD TECNOLÓGICA DE PARRAL"]
                         }, {
+                            "visible": false,
                             "variable": "EDI_APLI",
                             "tipo": "CARÁCTER",
                             "longuitud": "60",
-                            "etiqueta": "Edificio de aplicación asignado"
+                            "etiqueta": "Edificio de aplicación asignado",
+                            "valores": ["EDIFICIO DE VINCULACION UT PARRAL"]
                         }, {
+                            "visible": false,
                             "variable": "AUL_APLI",
                             "tipo": "CARÁCTER",
                             "longuitud": "30",
-                            "etiqueta": "Aula o grupo de aplicación asignando"
+                            "etiqueta": "Aula o grupo de aplicación asignando",
+                            "valores": ["FORO UTPARRAL"]
                         }, {
+                            "visible": false,
                             "variable": "DIA_APLI",
                             "tipo": "FECHA",
                             "longuitud": "10",
-                            "etiqueta": "Día de aplicación asignado"
+                            "etiqueta": "Día de aplicación asignado",
+                            "valores": ["30"]
                         }, {
+                            "visible": false,
                             "variable": "TUR_APLI",
                             "tipo": "CARÁCTER",
                             "longuitud": "1",
                             "etiqueta": "Turno de aplicación asignado",
-                            "valores": [{
-                                    "valor": "1",
-                                    "etiqueta": "Matutino"
-                                }, {
-                                    "valor": "2",
-                                    "etiqueta": "Vespertino"
-                                }, {
-                                    "valor": "3",
-                                    "etiqueta": "Nocturno"
-                                }, {
-                                    "valor": "4",
-                                    "etiqueta": "Único"
-                                }
-                            ]
+                            "valores": ["1"]
                         }
                     ]
                 }, {
+                    "visible": true,
                     "id_seccion": "SECCION1.2",
                     "etiqueta": "IDENTIFICACIÓN DE LA INSTITUCIÓN SEDE",
                     "variables": [{
+                            "visible": false,
                             "variable": "CVE_INST",
                             "tipo": "CARÁCTER",
                             "longuitud": "9",
-                            "etiqueta": "Clave de la institución en donde se llevó a cabo la aplicación"
+                            "etiqueta": "Clave de la institución en donde se llevó a cabo la aplicación",
+                            "valores": ["271100502"]
                         }, {
+                            "visible": false,
                             "variable": "IDENTIFICA",
                             "tipo": "CARÁCTER",
                             "longuitud": "15",
-                            "etiqueta": "Identificación de la aplicación"
+                            "etiqueta": "Identificación de la aplicación",
+                            "valores": ["270000380000000"]
                         }, {
+                            "visible": false,
                             "variable": "DESC_IDENT",
                             "tipo": "CARÁCTER",
                             "longuitud": "250",
-                            "etiqueta": "Identificación de la aplicación"
+                            "etiqueta": "Identificación de la aplicación",
+                            "valores": ["Universidad Tecnológica De Parral | TSU en Mantenimiento Área Industrial"]
                         }
                     ]
                 }
             ]
         }, {
+            "visible": false,
             "id_seccion": "SECCION2",
             "etiqueta": "II. IDENTIFICACIÓN DEL SUSTENTANTE",
             "variables": [{
+                    "visible": false,
                     "variable": "FOLIO",
                     "tipo": "CARÁCTER",
                     "longuitud": "9",
-                    "etiqueta": "Folio"
+                    "etiqueta": "Folio",
+                    "valores": ["491944184"]
                 }, {
+                    "visible": false,
                     "variable": "MATRICULA",
                     "tipo": "CARÁCTER",
                     "longuitud": "12",
-                    "etiqueta": "Clave o matrícula de la institución"
+                    "etiqueta": "Clave o matrícula de la institución",
+                    "valores": [""]
                 }
             ]
         }, {
+            "visible": true,
             "id_seccion": "SECCION3",
             "etiqueta": "III. CUESTIONARIO DE CONTEXTO",
             "secciones": [{
+                    "visible": true,
                     "id_seccion": "SECCION3.1",
                     "etiqueta": "Sección 1. Datos Generales",
                     "variables": [{
+                            "visible": true,
                             "id_seccion": "SECCION3.1.1",
                             "etiqueta": "Nombre del sustentante",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "PRIM_APE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "60",
                                     "etiqueta": "Primer apellido (como aparece en su acta de nacimiento)"
                                 }, {
+                                    "visible": true,
                                     "variable": "SEGU_APE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "60",
                                     "etiqueta": "Segundo apellido (como aparece en su acta de nacimiento)"
                                 }, {
+                                    "visible": true,
                                     "variable": "PRIM_APE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "60",
@@ -244,14 +269,17 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.1.2",
                             "etiqueta": "Fecha de nacimiento",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "DIA_NAC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "2",
                                     "etiqueta": "Día"
                                 }, {
+                                    "visible": true,
                                     "variable": "MES_NAC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "2",
@@ -295,6 +323,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ANO_NAC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "4",
@@ -302,6 +331,7 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "variable": "SEXO",
                             "tipo": "CARÁCTER",
                             "longuitud": "1",
@@ -315,6 +345,7 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "variable": "ENTI_NAC",
                             "tipo": "CARÁCTER",
                             "longuitud": "2",
@@ -421,9 +452,11 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.1.3",
                             "etiqueta": "¿Enfrenta algunas de las siguientes condiciones?",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "IMP_CAM",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -437,6 +470,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "IMP_ECU",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -450,6 +484,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "IMP_VER",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -463,6 +498,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "IMP_CON",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -476,6 +512,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "IMP_PAN",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -489,6 +526,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "IMP_PCA",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -502,6 +540,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "IMP_PDP",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -515,6 +554,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "IMP_PAT",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -528,6 +568,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "IMP_POB",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -541,6 +582,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "IMP_PAB",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -556,9 +598,11 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.1.4",
                             "etiqueta": "¿Alguno de sus padres habla una lengua indígena?",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "LI_MAD",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -575,6 +619,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "LI_PAD",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -595,14 +640,17 @@
                         }
                     ]
                 }, {
+                    "visible": true,
                     "id_seccion": "SECCION3.2",
                     "etiqueta": "Sección 2. Trayectoria Académica",
                     "variables": [{
+                            "visible": true,
                             "variable": "CCT_PROC",
                             "tipo": "CARÁCTER",
                             "longuitud": "10",
                             "etiqueta": "Indique la Clave del Centro de Trabajo (CCT) de la escuela donde estudia o estudió la educación media superior. Lo puede consultar con el personal que trabaja en su escuela o en la página: https://www.siged.sep.gob.mx/SIGED/escuelas.html"
                         }, {
+                            "visible": true,
                             "variable": "EDO_PROC",
                             "tipo": "CARÁCTER",
                             "longuitud": "2",
@@ -709,9 +757,11 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.2.1",
                             "etiqueta": "¿Cuándo cursó la última materia del nivel medio superior (bachillerato)?",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "MES_CUR",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "2",
@@ -755,6 +805,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ANO_CUR",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "4",
@@ -762,6 +813,7 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "variable": "HAC_MSU",
                             "tipo": "CARÁCTER",
                             "longuitud": "1",
@@ -775,6 +827,7 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "variable": "REG_PROC",
                             "tipo": "CARÁCTER",
                             "longuitud": "1",
@@ -788,6 +841,7 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "variable": "MOD_BAC",
                             "tipo": "CARÁCTER",
                             "longuitud": "1",
@@ -813,6 +867,7 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "variable": "SIS_NMS",
                             "tipo": "CARÁCTER",
                             "longuitud": "1",
@@ -829,6 +884,7 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "variable": "TURNO",
                             "tipo": "CARÁCTER",
                             "longuitud": "1",
@@ -851,11 +907,13 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "variable": "PROM_BAC",
                             "tipo": "NUMÉRICO",
                             "longuitud": "4(1)",
                             "etiqueta": "¿Cuál fue su promedio final en el segundo año del nivel medio superior (bachillerato)?"
                         }, {
+                            "visible": true,
                             "variable": "BEC_NEC",
                             "tipo": "CARÁCTER",
                             "longuitud": "1",
@@ -871,12 +929,15 @@
                         }
                     ]
                 }, {
+                    "visible": true,
                     "id_seccion": "SECCION3.3",
                     "etiqueta": "Sección 3. Características personales",
                     "variables": [{
+                            "visible": true,
                             "id_seccion": "SECCION3.3.1",
                             "etiqueta": "¿Con qué frecuencia realiza lo siguiente cuando trabaja en equipo?",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "FRE_PPA",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -896,6 +957,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_CDE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -915,6 +977,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_INT",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -934,6 +997,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_TSC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -953,6 +1017,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_ESL",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -972,6 +1037,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_AYU",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -991,6 +1057,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_SME",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1010,6 +1077,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_CTR",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1029,6 +1097,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_DTEC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1050,9 +1119,11 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.3.2",
                             "etiqueta": "Califique su nivel de habilidad para realizar las siguientes actividades:",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "SOC_PTFG",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1072,6 +1143,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "SOC_IMC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1091,6 +1163,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "SOC_PDM",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1110,6 +1183,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "SOC_HCM",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1129,6 +1203,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "SOC_ECM",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1148,6 +1223,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "SOC_POP",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1167,6 +1243,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "SOC_EOC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1188,9 +1265,11 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.3.3",
                             "etiqueta": "¿Con qué frecuencia realiza lo siguiente?",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "FRE_FCL",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1210,6 +1289,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_LTC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1229,6 +1309,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_LLTM",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1248,6 +1329,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_PDC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1267,6 +1349,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_ATC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1286,6 +1369,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_DTE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1305,6 +1389,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_ETTE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1324,6 +1409,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_HESC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1343,6 +1429,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_MAE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1362,6 +1449,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_PADC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1381,6 +1469,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_PAEC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1402,9 +1491,11 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.3.4",
                             "etiqueta": "Indique qué tanto se identifica con las siguientes afirmaciones.",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "IDE_ESE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1424,6 +1515,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "IDE_VBM",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1443,6 +1535,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "IDE_PPM",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1462,6 +1555,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "IDE_SDT",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1481,6 +1575,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "IDE_SEV",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1500,6 +1595,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "IDE_CSP",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1521,9 +1617,11 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.3.5",
                             "etiqueta": "Indique qué tanto lo describen las siguientes afirmaciones.",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "DES_ESME",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1543,6 +1641,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "DES_TERM",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1562,6 +1661,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "DES_DURO",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1581,6 +1681,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "DES_SOIO",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1600,6 +1701,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "DES_ESFU",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1619,6 +1721,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "DES_META",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1641,9 +1744,11 @@
 
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.3.6",
                             "etiqueta": "Indique el grado en el que está de acuerdo con los siguientes enunciados.",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "IGE_GLS",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1663,6 +1768,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "IGE_DCR",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1682,6 +1788,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "IGE_SFE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1701,6 +1808,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "IGE_DANI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1720,6 +1828,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "IGE_IAC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1741,9 +1850,11 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.3.7",
                             "etiqueta": "Cuando estudio…",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "CUA_PAC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1763,6 +1874,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "CUA_ACA",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1782,6 +1894,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "CUA_SPI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1801,6 +1914,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "CUA_HDD",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1820,6 +1934,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "CUA_PPI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1839,6 +1954,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "CUA_RIC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1858,6 +1974,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "CUA_ATI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1877,6 +1994,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "CUA_AIG",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1896,6 +2014,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "CUA_IPE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1915,6 +2034,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "CUA_EOI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1934,6 +2054,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "CUA_AIE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1955,9 +2076,11 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.3.8",
                             "etiqueta": "Indique el grado en el que está de acuerdo con los siguientes enunciados.",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "GAE_PREP",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1977,6 +2100,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "GAE_CRE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -1996,6 +2120,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "GAE_TDE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2015,6 +2140,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "GAE_ACV",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2034,6 +2160,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "GAE_EEI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2056,6 +2183,7 @@
 
                             ]
                         }, {
+                            "visible": true,
                             "variable": "TIE_LEER",
                             "tipo": "CARÁCTER",
                             "longuitud": "1",
@@ -2079,9 +2207,11 @@
                             ]
 
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.3.9",
                             "etiqueta": "¿Qué tan de acuerdo o en desacuerdo está con las siguientes afirmaciones acerca de la lectura?",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "ADL_CUOB",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2101,6 +2231,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ADL_PTFA",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2120,6 +2251,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ADL_GHOP",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2139,6 +2271,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ADL_PETI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2158,6 +2291,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ADL_DVLB",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2177,6 +2311,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ADL_BUIN",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2196,6 +2331,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ADL_BULE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2215,6 +2351,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ADL_TEDI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2234,6 +2371,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ADL_LEFL",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2253,6 +2391,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ADL_DILE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2272,6 +2411,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ADL_LMVC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2291,6 +2431,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ADL_DRPT",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2313,9 +2454,11 @@
 
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.3.10",
                             "etiqueta": "¿Con qué frecuencia lee los siguientes materiales por gusto? (Considere la versión impresa o digital)",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "FLM_REVI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2338,6 +2481,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FLM_COHI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2360,6 +2504,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FLM_LITE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2382,6 +2527,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FLM_LNFI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2404,6 +2550,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FLM_PERI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2429,9 +2576,11 @@
 
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.3.11",
                             "etiqueta": "¿Con qué frecuencia realiza las siguientes actividades relacionadas con la lectura?",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "PAL_MAIL",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2455,6 +2604,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "PAL_CHAT",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2477,6 +2627,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "PAL_LNIN",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2499,6 +2650,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "PAL_BITP",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2521,6 +2673,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "PAL_FORO",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2543,6 +2696,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "PAL_BIPL",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2568,9 +2722,11 @@
 
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.3.12",
                             "etiqueta": "Califique su nivel de habilidad para…",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "HAB_DAM",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2591,6 +2747,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "HAB_AEA",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2611,6 +2768,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "HAB_TEVS",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2631,6 +2789,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "HAB_LTI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2651,6 +2810,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "HAB_ETI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2671,6 +2831,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "HAB_ETIV",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2691,6 +2852,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "HAB_MHC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2711,6 +2873,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "HAB_OIF",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2731,6 +2894,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "HAB_IOA",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2751,6 +2915,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "HAB_ETO",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2771,6 +2936,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "HAB_APM",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2791,6 +2957,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "HAB_REL",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2811,6 +2978,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "HAB_SAL",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2831,6 +2999,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "HAB_DAP",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2851,6 +3020,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "HAB_CMA",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2873,6 +3043,7 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "variable": "EST_ALCA",
                             "tipo": "CARÁCTER",
                             "longuitud": "1",
@@ -2890,9 +3061,11 @@
                             ]
 
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.3.11",
                             "etiqueta": "Indique el daño que le causó que sus compañeros en el nivel medio superior (bachillerato) lo…",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "DAN_MALF",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2916,6 +3089,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "DAN_OFI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2939,6 +3113,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "DAN_EIR",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2962,6 +3137,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "DAN_REQC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -2985,6 +3161,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "DAN_MFT",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3008,6 +3185,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "DAN_FHC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3035,12 +3213,15 @@
                         }
                     ]
                 }, {
+                    "visible": true,
                     "id_seccion": "SECCION3.4",
                     "etiqueta": "Sección 4. Características de la escuela",
                     "variables": [{
+                            "visible": true,
                             "id_seccion": "SECCION3.4.1",
                             "etiqueta": "Indique qué tan adecuados son los siguientes espacios o aspectos de su escuela.",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "ADEC_BIB",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3063,6 +3244,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ADEC_EQC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3085,6 +3267,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ADEC_LABT",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3107,6 +3290,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ADEC_AUL",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3129,6 +3313,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ADEC_BAN",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3151,6 +3336,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ADEC_LHI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3175,9 +3361,11 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.4.2",
                             "etiqueta": "Indique qué tan adecuados son los siguientes espacios o aspectos de su escuela.",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "ASPC_PRE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3200,6 +3388,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ASPC_ASA",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3222,6 +3411,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ASPC_TUT",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3244,6 +3434,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "ASPC_STE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3268,9 +3459,11 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.4.3",
                             "etiqueta": "¿Con qué frecuencia sus maestros realizan las siguientes actividades? ",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "FRE_FACL",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3290,6 +3483,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_MDS",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3309,6 +3503,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_DCM",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3328,6 +3523,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_DTT",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3347,6 +3543,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_DRT",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3366,6 +3563,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_SUI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3385,6 +3583,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_SUC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3404,6 +3603,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "FRE_SUL",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3428,9 +3628,11 @@
                         }
                     ]
                 }, {
+                    "visible": true,
                     "id_seccion": "SECCION3.5",
                     "etiqueta": "Sección 5. Entorno familiar",
                     "variables": [{
+                            "visible": true,
                             "variable": "ESCO_MAN",
                             "tipo": "CARÁCTER",
                             "longuitud": "2",
@@ -3480,6 +3682,7 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "variable": "ESCO_MAD",
                             "tipo": "CARÁCTER",
                             "longuitud": "2",
@@ -3532,6 +3735,7 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "variable": "ESCO_PAD",
                             "tipo": "CARÁCTER",
                             "longuitud": "2",
@@ -3584,6 +3788,7 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "variable": "CUAN_LIB",
                             "tipo": "CARÁCTER",
                             "longuitud": "1",
@@ -3615,6 +3820,7 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "variable": "NIV_EDU",
                             "tipo": "CARÁCTER",
                             "longuitud": "1",
@@ -3637,6 +3843,7 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "variable": "HRS_TRAB",
                             "tipo": "CARÁCTER",
                             "longuitud": "1",
@@ -3662,6 +3869,7 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "variable": "CPV_CASA",
                             "tipo": "CARÁCTER",
                             "longuitud": "1",
@@ -3687,6 +3895,7 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "variable": "CPA_MES",
                             "tipo": "CARÁCTER",
                             "longuitud": "1",
@@ -3709,9 +3918,11 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.5.1",
                             "etiqueta": "¿Cuenta con los siguientes bienes y servicios en su casa?",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "SER_TELE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3725,6 +3936,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "SER_LAV",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3738,6 +3950,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "SER_REF",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3751,6 +3964,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "SER_HOR",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3764,6 +3978,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "SER_INTE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3777,6 +3992,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "SER_CABL",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3790,6 +4006,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "SER_TABL",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3806,6 +4023,7 @@
 
                             ]
                         }, {
+                            "visible": true,
                             "variable": "CUARTOS",
                             "tipo": "CARÁCTER",
                             "longuitud": "1",
@@ -3835,9 +4053,11 @@
 
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.5.2",
                             "etiqueta": "¿Cuántos de los siguientes bienes tiene en su casa?",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "BIEN_PC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3860,6 +4080,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "SER_TV",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3882,6 +4103,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "SER_AUTO",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3904,6 +4126,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "SER_BANO",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3929,6 +4152,7 @@
 
                             ]
                         }, {
+                            "visible": true,
                             "variable": "VAC_RM",
                             "tipo": "CARÁCTER",
                             "longuitud": "1",
@@ -3954,12 +4178,15 @@
                         }
                     ]
                 }, {
+                    "visible": true,
                     "id_seccion": "SECCION3.6",
                     "etiqueta": "Sección 6. Decisiones académicas",
                     "variables": [{
+                            "visible": true,
                             "id_seccion": "SECCION3.6.1",
                             "etiqueta": "¿Qué tanto consideró los siguientes aspectos al elegir la institución para estudiar el nivel superior?",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "QTC_CEI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3979,6 +4206,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "QTC_OCP",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -3998,6 +4226,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "QTC_OEE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -4017,6 +4246,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "QTC_CMI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -4036,6 +4266,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "QTC_IES",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -4055,6 +4286,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "QTC_TTM",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -4076,9 +4308,11 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.6.7",
                             "etiqueta": "¿Qué tanto consideró las siguientes fuentes de información para elegir su carrera?",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "CAR_FOLL",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -4098,6 +4332,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "CAR_PLI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -4117,6 +4352,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "CAR_GUIA",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -4136,6 +4372,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "CAR_PIOV",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -4155,6 +4392,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "CAR_PTOV",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -4176,9 +4414,11 @@
                                 }
                             ]
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.6.8",
                             "etiqueta": "¿Qué tanto influyeron las siguientes personas para elegir su carrera?",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "INF_PAD",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -4198,6 +4438,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "INF_HER",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -4217,6 +4458,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "INF_AMI",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -4236,6 +4478,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "INF_PRF",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -4255,6 +4498,7 @@
                                         }
                                     ]
                                 }, {
+                                    "visible": true,
                                     "variable": "INF_POE",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -4277,6 +4521,7 @@
 
                             ]
                         }, {
+                            "visible": true,
                             "variable": "UTI_GUI",
                             "tipo": "CARÁCTER",
                             "longuitud": "1",
@@ -4291,9 +4536,11 @@
                             ]
 
                         }, {
+                            "visible": true,
                             "id_seccion": "SECCION3.6.9",
                             "etiqueta": "¿Tomó un curso de preparación para el EXANI-II (Examen Nacional de Ingreso a la Educación Superior)?",
                             "variables": [{
+                                    "visible": true,
                                     "variable": "CUR_ESC",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -4308,6 +4555,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "CUR_IPA",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
@@ -4322,6 +4570,7 @@
                                     ]
 
                                 }, {
+                                    "visible": true,
                                     "variable": "CUR_MPA",
                                     "tipo": "CARÁCTER",
                                     "longuitud": "1",
