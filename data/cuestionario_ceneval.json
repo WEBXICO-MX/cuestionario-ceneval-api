@@ -3,7 +3,7 @@
     "version_examen": "EXANI II - NE (NUEVO EXAMEN)",
     "anio_examen": 2022,
     "activo": true,
-    "fecha_registro": "17/03/2022 09:32:00",
+    "fecha_registro": "24/03/2022 09:32:00",
     "email_registro": "eder.weiss87@gmail.com",
     "secciones": [{
             "id_seccion": "SECCION1",
@@ -191,7 +191,12 @@
                         }, {
                             "variable": "IDENTIFICA",
                             "tipo": "CARÁCTER",
-                            "longuitud": "12",
+                            "longuitud": "15",
+                            "etiqueta": "Identificación de la aplicación"
+                        }, {
+                            "variable": "DESC_IDENT",
+                            "tipo": "CARÁCTER",
+                            "longuitud": "250",
                             "etiqueta": "Identificación de la aplicación"
                         }
                     ]
@@ -871,35 +876,1185 @@
                     "variables": [{
                             "id_seccion": "SECCION3.3.1",
                             "etiqueta": "¿Con qué frecuencia realiza lo siguiente cuando trabaja en equipo?",
-                            "variables": []
+                            "variables": [{
+                                    "variable": "FRE_PPA",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Participo en la planeación de actividades",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FRE_CDE",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Colaboro en el desarrollo de estrategias para cumplir con las metas del trabajo",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FRE_INT",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Intercambio información con mis compañeros de equipo",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FRE_TSC",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Intervengo para tratar de solucionar conflictos entre los miembros del equipo",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FRE_ESL",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Escucho las ideas de los otros integrantes del equipo",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FRE_AYU",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Ayudo a mis compañeros de equipo a cumplir con las tareas que les toca realizar",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FRE_SME",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Hago sugerencias para mejorar el desempeño del equipo",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FRE_CTR",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Cumplo con las tareas que me tocan",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FRE_DTEC",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Divido las tareas entre los integrantes del equipo para concluir el trabajo más rápido",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }
+                            ]
                         }, {
                             "id_seccion": "SECCION3.3.2",
                             "etiqueta": "Califique su nivel de habilidad para realizar las siguientes actividades:",
-                            "variables": []
+                            "variables": [{
+                                    "variable": "SOC_PTFG",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Presento un trabajo frente a un grupo",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "No lo sé hacer"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Poco hábil"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Hábil"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Muy hábil"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "SOC_IMC",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Inicio y mantengo una conversación con compañeros que no conozco",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "No lo sé hacer"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Poco hábil"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Hábil"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Muy hábil"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "SOC_PDM",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Planteo dudas a los maestros",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "No lo sé hacer"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Poco hábil"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Hábil"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Muy hábil"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "SOC_HCM",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Hablo con mis compañeros sobre temas relacionados con los trabajos o tareas de la escuela",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "No lo sé hacer"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Poco hábil"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Hábil"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Muy hábil"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "SOC_ECM",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Establezco una conversación con los maestros para profundizar sobre los temas que se revisan en clase",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "No lo sé hacer"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Poco hábil"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Hábil"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Muy hábil"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "SOC_POP",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Pregunto a otras personas acerca de temas que no entiendo en las clases",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "No lo sé hacer"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Poco hábil"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Hábil"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Muy hábil"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "SOC_EOC",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Explico a otro compañero algún tema aprendido en clase",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "No lo sé hacer"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Poco hábil"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Hábil"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Muy hábil"
+                                        }
+                                    ]
+                                }
+                            ]
                         }, {
                             "id_seccion": "SECCION3.3.3",
                             "etiqueta": "¿Con qué frecuencia realiza lo siguiente?",
-                            "variables": []
+                            "variables": [{
+                                    "variable": "FRE_FCL",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Falto a clases",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FRE_LTC",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Llego a tiempo a clases",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FRE_LLTM",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Llevo todos los materiales que utilizo en las clases (libros, cuadernos, lápices, etc.)",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FRE_PDC",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Participo durante la clase",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FRE_ATC",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Asisto a todas las clases",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FRE_DTE",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Dedico tiempo a estudiar fuera de la escuela",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FRE_ETTE",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Entrego a tiempo las tareas que me dejan en la escuela",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FRE_HESC",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Hago los ejercicios que me solicitan en las clases",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FRE_MAE",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Planeo mis actividades escolares",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FRE_PADC",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Pongo atención durante las clases",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FRE_PAEC",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Participo en actividades extracurriculares que se realizan en la escuela (actividades deportivas, artísticas, etc.)",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }
+                            ]
                         }, {
                             "id_seccion": "SECCION3.3.4",
                             "etiqueta": "Indique qué tanto se identifica con las siguientes afirmaciones.",
-                            "variables": []
+                            "variables": [{
+                                    "variable": "IDE_ESE",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Si me esfuerzo lo suficiente, tendré éxito en la escuela",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "No me identifico"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Me identifico poco"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Me identifico"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Me identifico totalmente"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "IDE_VBM",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "El que me vaya bien o mal en la escuela depende totalmente de mí",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "No me identifico"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Me identifico poco"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Me identifico"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Me identifico totalmente"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "IDE_PPM",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Si me lo propongo, me va mejor en la escuela",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "No me identifico"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Me identifico poco"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Me identifico"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Me identifico totalmente"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "IDE_SDT",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Si dedico suficiente tiempo a la escuela, obtengo mejores calificaciones",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "No me identifico"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Me identifico poco"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Me identifico"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Me identifico totalmente"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "IDE_SEV",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Si pongo más empeño al estudiar, me va mejor en los exámenes",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "No me identifico"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Me identifico poco"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Me identifico"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Me identifico totalmente"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "IDE_CSP",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Mis calificaciones en la escuela son la consecuencia de la atención que pongo al estudiar",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "No me identifico"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Me identifico poco"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Me identifico"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Me identifico totalmente"
+                                        }
+                                    ]
+                                }
+                            ]
                         }, {
                             "id_seccion": "SECCION3.3.5",
                             "etiqueta": "Indique qué tanto lo describen las siguientes afirmaciones.",
-                            "variables": []
+                            "variables": [{
+                                    "variable": "DES_ESME",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Soy una persona que se esmera",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "No me describe"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Me describe poco"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Me describe"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Me describe mucho"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "DES_TERM",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Termino todo lo que empiezo",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "No me describe"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Me describe poco"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Me describe"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Me describe mucho"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "DES_DURO",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Soy una persona que trabaja duro",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "No me describe"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Me describe poco"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Me describe"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Me describe mucho"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "DES_SOIO",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Puedo superar los obstáculos que se interponen para alcanzar mis objetivos",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "No me describe"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Me describe poco"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Me describe"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Me describe mucho"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "DES_ESFU",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Soy una persona que se esfuerza",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "No me describe"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Me describe poco"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Me describe"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Me describe mucho"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "DES_META",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "He alcanzado metas que requirieron años de esfuerzo",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "No me describe"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Me describe poco"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Me describe"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Me describe mucho"
+                                        }
+                                    ]
+                                }
+
+                            ]
                         }, {
                             "id_seccion": "SECCION3.3.6",
                             "etiqueta": "Indique el grado en el que está de acuerdo con los siguientes enunciados.",
-                            "variables": []
+                            "variables": [{
+                                    "variable": "IGE_GLS",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Me gusta leer sobre los temas que reviso en la escuela",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "IGE_DCR",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Me divierto con las clases que recibo en la escuela",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "IGE_SFE",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Soy feliz estudiando los temas que me enseñan en la escuela",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "IGE_DANI",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Disfruto adquiriendo la nueva información que recibo en las clases",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "IGE_IAC",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Me interesa aprender cosas nuevas sobre los temas que reviso en la escuela",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }
+                            ]
                         }, {
                             "id_seccion": "SECCION3.3.7",
                             "etiqueta": "Cuando estudio…",
-                            "variables": []
+                            "variables": [{
+                                    "variable": "CUA_PAC",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Pongo más atención cuando encuentro información importante",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "CUA_ACA",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "aplico en los cursos actuales los conocimientos que aprendí en cursos pasados",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "CUA_SPI",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "separo en partes la información disponible",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "CUA_HDD",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "hago dibujos o diagramas",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "CUA_PPI",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "pongo en mis propias palabras la información nueva",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "CUA_RIC",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "relaciono la información nueva con lo que ya conozco",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "CUA_ATI",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "analizo toda la información en un único momento",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "CUA_AIG",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "pongo mayor atención en las ideas generales",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "CUA_IPE",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "invento mis propios ejemplos para entender mejor la información",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "CUA_EOI",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "identifico la estructura y organización de la información",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "CUA_AIE",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "pongo mayor atención en las ideas específicas",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Algunas veces"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Frecuentemente"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Siempre o casi siempre"
+                                        }
+                                    ]
+                                }
+                            ]
                         }, {
                             "id_seccion": "SECCION3.3.8",
                             "etiqueta": "Indique el grado en el que está de acuerdo con los siguientes enunciados.",
-                            "variables": []
+                            "variables": [{
+                                    "variable": "GAE_PREP",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "La preparación que recibo en la escuela es muy útil para conseguir un buen trabajo",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "GAE_CRE",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Las clases que recibo en la escuela son necesarias para adquirir nuevos conocimientos más adelante",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "GAE_TDE",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Hacer las tareas que me dejan en la escuela me ayuda a prepararme mejor para el futuro",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "GAE_ACV",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Lo que aprendo en las clases es útil para mi vida",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "GAE_EEI",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Lo que me enseñan en la escuela es importante para lograr mis metas personales",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }
+
+                            ]
                         }, {
                             "variable": "TIE_LEER",
                             "tipo": "CARÁCTER",
@@ -926,11 +2081,353 @@
                         }, {
                             "id_seccion": "SECCION3.3.9",
                             "etiqueta": "¿Qué tan de acuerdo o en desacuerdo está con las siguientes afirmaciones acerca de la lectura?",
-                            "variables": []
+                            "variables": [{
+                                    "variable": "ADL_CUOB",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Solo leo cuando me obligan",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "ADL_PTFA",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Leer es uno de mis pasatiempos favoritos",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "ADL_GHOP",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Me gusta hablar sobre lo que leo con otras personas",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "ADL_PETI",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Leer es una pérdida de tiempo",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "ADL_DVLB",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Disfruto visitando librerías y bibliotecas",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "ADL_BUIN",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Solo leo si necesito buscar información",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "ADL_BULE",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Soy un buen lector",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "ADL_TEDI",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Soy capaz de comprender textos difíciles",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "ADL_LEFL",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Leo con fluidez",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "ADL_DILE",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Siempre tengo dificultad con la lectura",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "ADL_LMVC",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Tengo que leer el texto muchas veces antes de comprenderlo completamente",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "ADL_DRPT",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Es muy difícil responder preguntas acerca de los textos",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Totalmente en desacuerdo"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "En desacuerdo"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "De acuerdo"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Totalmente de acuerdo"
+                                        }
+                                    ]
+                                }
+
+                            ]
                         }, {
                             "id_seccion": "SECCION3.3.10",
                             "etiqueta": "¿Con qué frecuencia lee los siguientes materiales por gusto? (Considere la versión impresa o digital)",
-                            "variables": []
+                            "variables": [{
+                                    "variable": "FLM_REVI",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Revistas",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Pocas veces al año"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Una vez al mes"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Varias veces al mes"
+                                        }, {
+                                            "valor": "5",
+                                            "etiqueta": "Varias veces a la semana"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FLM_COHI",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Comics o historietas",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Pocas veces al año"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Una vez al mes"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Varias veces al mes"
+                                        }, {
+                                            "valor": "5",
+                                            "etiqueta": "Varias veces a la semana"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FLM_LITE",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Literatura (por ejemplo novelas, cuentos, poesía, etc.)",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Pocas veces al año"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Una vez al mes"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Varias veces al mes"
+                                        }, {
+                                            "valor": "5",
+                                            "etiqueta": "Varias veces a la semana"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FLM_LNFI",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Libros de no ficción (por ejemplo históricos, de divulgación científica, etc.) ",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Pocas veces al año"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Una vez al mes"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Varias veces al mes"
+                                        }, {
+                                            "valor": "5",
+                                            "etiqueta": "Varias veces a la semana"
+                                        }
+                                    ]
+                                }, {
+                                    "variable": "FLM_PERI",
+                                    "tipo": "CARÁCTER",
+                                    "longuitud": "1",
+                                    "etiqueta": "Periódicos",
+                                    "valores": [{
+                                            "valor": "1",
+                                            "etiqueta": "Nunca o casi nunca"
+                                        }, {
+                                            "valor": "2",
+                                            "etiqueta": "Pocas veces al año"
+                                        }, {
+                                            "valor": "3",
+                                            "etiqueta": "Una vez al mes"
+                                        }, {
+                                            "valor": "4",
+                                            "etiqueta": "Varias veces al mes"
+                                        }, {
+                                            "valor": "5",
+                                            "etiqueta": "Varias veces a la semana"
+                                        }
+                                    ]
+                                }
+
+                            ]
                         }, {
                             "id_seccion": "SECCION3.3.11",
                             "etiqueta": "¿Con qué frecuencia realiza las siguientes actividades relacionadas con la lectura?",
