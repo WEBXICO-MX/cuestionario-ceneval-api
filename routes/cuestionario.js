@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
         MongoClient.connect(url, function(err, db) {
             if (err) throw err;
             var dbo = db.db("saice");
-            dbo.collection("cuestionarios_ceneval").findOne({activo:false}, function(err, result) {
+            dbo.collection("cuestionarios_ceneval").findOne({activo:true}, function(err, result) {
             if (err) throw err;
                res.send(result);
               db.close();
